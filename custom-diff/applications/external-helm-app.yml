@@ -20,5 +20,15 @@ spec:
   # Sync policy
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true  
+      - CreateNamespace=true
+      
+  https://learning.codefresh.io/path-player?courseid=gitops-at-scale&unit=62f63d43ccb64a6f2c3e8304Unit:
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+      - /metadata/annotations/creation
+    - group: *
+      kind: Secret
+      jsonPointers:
+      - /data/my-password
    
